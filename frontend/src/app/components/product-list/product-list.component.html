@@ -1,0 +1,32 @@
+<section class="product-section">
+
+  <!-- Loading -->
+  @if (loading) {
+    <div class="state-box">
+      <div class="spinner"></div>
+      <p>Loading products…</p>
+    </div>
+  }
+
+  <!-- Error -->
+  @if (!loading && error) {
+    <div class="state-box error">
+      <span class="icon">⚠️</span>
+      <p>{{ error }}</p>
+    </div>
+  }
+
+  <!-- Product Grid -->
+  @if (!loading && !error) {
+    <div class="grid">
+      @for (product of products; track product.name) {
+        <div class="card">
+          <span class="badge">{{ product.category }}</span>
+          <h2 class="card-name">{{ product.name }}</h2>
+          <p class="card-price">${{ product.price }}<span class="usd">.00</span></p>
+        </div>
+      }
+    </div>
+  }
+
+</section>

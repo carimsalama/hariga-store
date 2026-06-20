@@ -1,0 +1,45 @@
+// ── Header ────────────────────────────────────────────────────
+.header {
+  background: #4f46e5;
+  color: #fff;
+  padding: 1.25rem 1rem;
+}
+
+.header-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+
+  .logo-icon { font-size: 1.5rem; }
+  strong { font-weight: 800; }
+}
+
+.tagline {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.75;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+// ── Footer ────────────────────────────────────────────────────
+.footer {
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: 0.8rem;
+  color: #9ca3af;
+  border-top: 1px solid #f3f4f6;
+}

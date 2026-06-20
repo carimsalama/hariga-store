@@ -1,0 +1,6 @@
+ 
+# Add .gitignore content manually:
+# backend/node_modules/
+# frontend/node_modules/
+# backend/.env
+# frontend/dist/
